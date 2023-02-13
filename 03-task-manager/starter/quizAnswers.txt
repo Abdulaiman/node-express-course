@@ -2,6 +2,8 @@
 
 2. C ---> Create... R ---> Read... U ---> Update... D ---> Delete.
 
-3. the app is able to access the information in the .env file using the Process.env.
+3.1 the app is able to access the information in the .env file using the Process.env.
 
-4. by creating a .gitignore and adding the .env in it so that it would not be sent down to github.
+3.2 by creating a .gitignore and adding the .env in it so that it would not be sent down to github.
+
+
