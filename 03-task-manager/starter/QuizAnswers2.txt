@@ -1,0 +1,10 @@
+1) It was created because there was too many try catch blocks and that is not following the DRY principle, so the code was refactored so that it can be reusable.
+
+2)const getTask = asyncWrapper(async (req, res, next) => {
+  const { id: taskID } = req.params;
+  const task = await Task.findOne({ _id: taskID });
+  if (!task) {
+ next(createCustomError(`there is no task found for this specific id ${id}`, 404))
+  }
+  res.status(200).json({ task });
+});
